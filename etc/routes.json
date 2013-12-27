@@ -1,0 +1,6 @@
+{
+    "epicdoc"                           : "\\Epicdoc\\Controller\\DefaultController",
+    "epicdoc/new"                       : "\\Epicdoc\\Controller\\Epicdoc\\Project",
+    "epicdoc/:project_alias"            : "\\Epicdoc\\Controller\\Epicdoc\\Listing",
+    "epicdoc/:project_alias/:page_alias": "\\Epicdoc\\Controller\\Epicdoc\\Page"
+}

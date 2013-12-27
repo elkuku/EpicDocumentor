@@ -1,0 +1,24 @@
+{
+    "name"             : "elkuku/EpicDocumentor",
+    "description"      : "A documentation engine using markdown",
+    "minimum-stability": "dev",
+    "license"          : "GPL",
+    "version"          : "1.0.0-beta",
+    "require"          : {
+        "php"               : ">=5.3.10",
+        "joomla/framework": "dev-master"
+    },
+    "autoload": {
+        "psr-0": {
+            "Joomla": "src/",
+            "Epicdoc": "src/",
+            "App": "src/"
+        }
+    },
+    "authors"          : [
+        {
+            "name" : "Nikolai Plath",
+            "email": "der.el.kuku@gmail.com"
+        }
+    ]
+}
