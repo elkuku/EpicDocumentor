@@ -22,7 +22,8 @@ class EpicdocHtmlView extends EpicdocDefaultView
 	 */
 	public function render()
 	{
-		$this->renderer->set('items', $this->model->getItems());
+		$this->renderer->set('projects', $this->model->getItems());
+
 		return parent::render();
 	}
 

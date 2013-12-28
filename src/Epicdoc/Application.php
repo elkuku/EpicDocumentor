@@ -8,6 +8,7 @@
 
 namespace Epicdoc;
 
+use Epicdoc\Router\Exception\RoutingException;
 use Joomla\Application\AbstractWebApplication;
 use Joomla\DI\Container;
 
@@ -64,18 +65,6 @@ final class Application extends AbstractWebApplication
 	}
 
 	/**
-	 * Get a debugger object.
-	 *
-	 * @return  TrackerDebugger
-	 *
-	 * @since   1.0
-	 */
-	public function getDebugger()
-	{
-		return $this->container->get('debugger');
-	}
-
-	/**
 	 * Method to run the Web application routines.
 	 *
 	 * @return  void
@@ -124,29 +113,6 @@ final class Application extends AbstractWebApplication
 			//$contents = str_replace('%%%DEBUG%%%', $this->getDebugger()->getOutput(), $contents);
 
 			$this->setBody($contents);
-		}
-		catch (AuthenticationException $exception)
-		{
-			header('HTTP/1.1 403 Forbidden', true, 403);
-
-			$this->mark('Application terminated with an AUTH EXCEPTION');
-
-			$context = array();
-			$context['message'] = 'Authentication failure';
-
-			if (JDEBUG)
-			{
-				// The exceptions contains the User object and the action.
-				if ($exception->getUser()->username)
-				{
-					$context['user'] = $exception->getUser()->username;
-					$context['id'] = $exception->getUser()->id;
-				}
-
-				$context['action'] = $exception->getAction();
-			}
-
-			$this->setBody($this->getDebugger()->renderException($exception, $context));
 		}
 		catch (RoutingException $exception)
 		{

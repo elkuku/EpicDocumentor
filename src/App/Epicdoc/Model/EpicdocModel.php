@@ -20,6 +20,7 @@ class EpicdocModel extends AbstractEpicdocDatabaseModel
 {
 	public function getItems()
 	{
-		return Folder::folders(JPATH_ROOT . '/docu_base');
+		return with(new ProjectModel($this->db))->getProjects();
+//		return Folder::folders(JPATH_ROOT . '/docu_base');
 	}
 }

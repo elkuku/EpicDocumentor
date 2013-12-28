@@ -28,6 +28,8 @@
 
 	<script type="text/javascript">jQuery('.hasTooltip').tooltip();</script>
 	<title>EpicDocumentor</title>
+
+	<link rel="shortcut icon" href="/favicon.ico">
 </head>
 
 <body>

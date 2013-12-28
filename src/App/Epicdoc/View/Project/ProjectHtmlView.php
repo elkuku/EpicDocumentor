@@ -6,11 +6,11 @@
  * Time: 09:05
  */
 
-namespace App\Epicdoc\View\Page;
+namespace App\Epicdoc\View\Project;
 
 use Epicdoc\View\EpicdocDefaultView;
 
-class PageHtmlView extends EpicdocDefaultView
+class ProjectHtmlView extends EpicdocDefaultView
 {
 	protected $project;
 	protected $page;
@@ -26,8 +26,6 @@ class PageHtmlView extends EpicdocDefaultView
 	public function render()
 	{
 		$this->renderer->set('project', $this->getProject());
-		$this->renderer->set('page', $this->getPage());
-		$this->renderer->set('item', $this->model->getItem($this->getProject(), $this->getPage()));
 
 		return parent::render();
 	}
@@ -47,7 +45,8 @@ class PageHtmlView extends EpicdocDefaultView
 	{
 		if (!$this->project)
 		{
-			throw new \RuntimeException('Project not set!');
+			// New project
+			return '';
 		}
 
 		return $this->project;
@@ -66,11 +65,6 @@ class PageHtmlView extends EpicdocDefaultView
 	 */
 	public function getPage()
 	{
-		if (!$this->page)
-		{
-			// New page
-			return '';
-		}
 		return $this->page;
 	}
 }
