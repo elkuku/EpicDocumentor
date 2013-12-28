@@ -11,7 +11,7 @@ error_reporting(-1);
 define('JPATH_ROOT',          dirname(__DIR__));
 define('JPATH_CONFIGURATION', JPATH_ROOT . '/etc');
 define('JPATH_THEMES',        JPATH_ROOT . '/www');
-define('JPATH_TEMPLATES',     JPATH_ROOT . '/templates');
+define('JPATH_TEMPLATES',     JPATH_ROOT . '/tpl');
 
 // Load the Composer autoloader
 if (false == include JPATH_ROOT . '/vendor/autoload.php')
