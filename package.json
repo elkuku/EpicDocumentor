@@ -1,0 +1,25 @@
+{
+  "name": "EpicDocumentor",
+  "version": "0.0.1",
+  "description": "Write documentation in [Markdown](http://daringfireball.net/projects/markdown/) syntax using the [EpicEditor](https://github.com/OscarGodson/EpicEditor).",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/elkuku/EpicDocumentor.git"
+  },
+  "author": "Nikolai Plath",
+  "license": "GPL",
+  "bugs": {
+    "url": "https://github.com/elkuku/EpicDocumentor/issues"
+  },
+  "homepage": "https://github.com/elkuku/EpicDocumentor",
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "grunt-contrib-clean": "~0.5.0",
+    "grunt-contrib-copy": "~0.5.0",
+    "grunt-contrib-compress": "~0.5.3"
+  }
+}
