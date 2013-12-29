@@ -9,8 +9,8 @@
 <h1><?= $this->project ?></h1>
 
 <p>
-	<a class="btn btn-success" href="<?= $this->uri->base->path . 'epicdoc/' . $this->project ?>/new">New Page</a>
-	<a class="btn btn-warning" href="<?= $this->uri->base->path . 'epicdoc/' . $this->project ?>/edit">Edit Project</a>
+	<a class="btn btn-success" href="<?= $this->uri->base->path . 'epicdoc/' . $this->project ?>/new"><span class="glyphicon glyphicon-plus"></span> New Page</a>
+	<a class="btn btn-warning" href="<?= $this->uri->base->path . 'epicdoc/' . $this->project ?>/edit"><span class="glyphicon glyphicon-pencil"></span> Edit Project</a>
 </p>
 
 <?php if (!$this->pages) : ?>

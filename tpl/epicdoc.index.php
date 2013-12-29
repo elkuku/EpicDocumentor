@@ -11,7 +11,7 @@
 <h2>Projects</h2>
 
 <p>
-	<a class="btn btn-success" href="<?= $this->uri->base->path ?>epicdoc/new">New Project</a>
+	<a class="btn btn-success" href="<?= $this->uri->base->path ?>epicdoc/new"><span class="glyphicon glyphicon-plus"></span> New Project</a>
 </p>
 
 <?php if (!$this->projects) : ?>

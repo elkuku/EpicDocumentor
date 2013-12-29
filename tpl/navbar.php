@@ -16,7 +16,9 @@
 			<span class="icon-bar"></span>
 			<span class="icon-bar"></span>
 		</button>
-		<a class="navbar-brand" href="<?php echo $this->uri->base->path ?>epicdoc">EpicDocumentor</a>
+		<a class="navbar-brand" href="<?php echo $this->uri->base->path ?>epicdoc">
+			<span style="color: blue;">#!</span> EpicDocumentor
+		</a>
 	</div>
 
 	<!-- Collect the nav links, forms, and other content for toggling -->
