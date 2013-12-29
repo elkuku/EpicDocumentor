@@ -26,13 +26,19 @@ class ProjectModel extends AbstractEpicdocDatabaseModel
 	/**
 	 * Instantiate the model.
 	 *
-	 * @param   DatabaseDriver  $database  The database adapter.
+	 * @param   DatabaseDriver $database The database adapter.
 	 *
+	 * @throws \UnexpectedValueException
 	 * @since   1.0
 	 */
 	public function __construct(DatabaseDriver $database)
 	{
 		$this->basePath = JPATH_ROOT . '/docu_base';
+
+		if (false == is_dir($this->basePath))
+		{
+			throw new \UnexpectedValueException('Invalid docu base (please create): ' . $this->basePath);
+		}
 
 		return parent::__construct($database);
 	}
