@@ -1,6 +1,6 @@
 {
     "name"        : "epicdocumentor",
-    "version"     : "1.0",
+    "version"     : "0.0.1",
     "homepage"    : "https://github.com/elkuku/EpicDocumentor",
     "description" : "Create documentation in Markdown format.",
     "license"     : "GPL",
@@ -8,6 +8,6 @@
         "jquery"    : "2.0.3",
         "bootstrap" : "3.0.2",
         "less"      : "1.5.0",
-        "epiceditor": "0.2.*"
+        "epiceditor": "0.2.2"
     }
 }
