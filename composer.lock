@@ -3,20 +3,20 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "944fad1864881e6dbe09c60b206d43f6",
+    "hash": "86c0ea2a6f2929c242eb2f4d535d0f35",
     "packages": [
         {
             "name": "joomla/framework",
-            "version": "dev-master",
+            "version": "1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/joomla/joomla-framework.git",
-                "reference": "fb57d5e2a83979c90c1a7a186ac2804404a61385"
+                "reference": "3db74e6f9bbf151c0e73425887921cb239ad1e0e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/joomla/joomla-framework/zipball/fb57d5e2a83979c90c1a7a186ac2804404a61385",
-                "reference": "fb57d5e2a83979c90c1a7a186ac2804404a61385",
+                "url": "https://api.github.com/repos/joomla/joomla-framework/zipball/3db74e6f9bbf151c0e73425887921cb239ad1e0e",
+                "reference": "3db74e6f9bbf151c0e73425887921cb239ad1e0e",
                 "shasum": ""
             },
             "require": {
@@ -89,7 +89,7 @@
                 "framework",
                 "joomla"
             ],
-            "time": "2013-12-10 02:36:54"
+            "time": "2013-12-01 00:38:39"
         },
         {
             "name": "psr/log",
@@ -97,12 +97,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-fig/log.git",
-                "reference": "5144da9525d24346bf009ff28f10cbaa1f0f166e"
+                "reference": "65f363ac44058796a8e1428cf41e6d92d8a75ddc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-fig/log/zipball/5144da9525d24346bf009ff28f10cbaa1f0f166e",
-                "reference": "5144da9525d24346bf009ff28f10cbaa1f0f166e",
+                "url": "https://api.github.com/repos/php-fig/log/zipball/65f363ac44058796a8e1428cf41e6d92d8a75ddc",
+                "reference": "65f363ac44058796a8e1428cf41e6d92d8a75ddc",
                 "shasum": ""
             },
             "type": "library",
@@ -132,7 +132,7 @@
                 "psr",
                 "psr-3"
             ],
-            "time": "2013-12-05 15:25:07"
+            "time": "2013-12-25 11:17:50"
         }
     ],
     "packages-dev": [
@@ -142,9 +142,9 @@
 
     ],
     "minimum-stability": "dev",
-    "stability-flags": {
-        "joomla/framework": 20
-    },
+    "stability-flags": [
+
+    ],
     "platform": {
         "php": ">=5.3.10"
     },
