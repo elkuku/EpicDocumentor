@@ -1,6 +1,6 @@
 {
   "name": "EpicDocumentor",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Write documentation in [Markdown](http://daringfireball.net/projects/markdown/) syntax using the [EpicEditor](https://github.com/OscarGodson/EpicEditor).",
   "main": "index.js",
   "scripts": {
