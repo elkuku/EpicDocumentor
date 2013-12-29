@@ -1,9 +1,9 @@
 <?php
 /**
- * Part of the Joomla Tracker Service Package
- *
- * @copyright  Copyright (C) 2012 - 2013 Open Source Matters, Inc. All rights reserved.
- * @license    GNU General Public License version 2 or later; see LICENSE.txt
+ * Created by PhpStorm.
+ * User: elkuku
+ * Date: 26.12.13
+ * Time: 09:05
  */
 
 namespace Epicdoc\Service;
@@ -14,8 +14,6 @@ use Joomla\Github\Github as JoomlaGitHub;
 use Joomla\Github\Http as JoomlaGitHubHttp;
 use Joomla\Http\HttpFactory;
 use Joomla\Registry\Registry;
-
-use JTracker\Container;
 
 /**
  * GitHub service provider

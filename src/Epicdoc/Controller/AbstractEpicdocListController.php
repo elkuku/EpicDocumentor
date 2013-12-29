@@ -1,20 +1,14 @@
 <?php
 /**
- * Part of the Joomla Tracker Controller Package
- *
- * @copyright  Copyright (C) 2012 - 2013 Open Source Matters, Inc. All rights reserved.
- * @license    GNU General Public License version 2 or later; see LICENSE.txt
+ * Created by PhpStorm.
+ * User: elkuku
+ * Date: 26.12.13
+ * Time: 09:05
  */
 
 namespace Epicdoc\Controller;
 
-use App\Tracker\Model\IssuesModel;
-
-use Joomla\Registry\Registry;
 use Joomla\Uri\Uri;
-
-use JTracker\Application;
-use JTracker\Pagination\TrackerPagination;
 
 /**
  * Abstract Controller class for the Tracker Application
@@ -23,11 +17,6 @@ use JTracker\Pagination\TrackerPagination;
  */
 abstract class AbstractEpicdocListController extends AbstractEpicdocController
 {
-	/**
-	 * @var TrackerPagination
-	 */
-	protected $pagination;
-
 	/**
 	 * @var IssuesModel
 	 */
