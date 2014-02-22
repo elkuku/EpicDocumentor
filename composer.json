@@ -5,8 +5,13 @@
     "license"          : "GPL",
     "version"          : "0.0.2",
     "require"          : {
-        "php"               : ">=5.3.10",
-        "joomla/framework": "1.0"
+        "php"               : ">=5.4.4",
+        "joomla/application": "1.*@stable",
+        "joomla/model": "1.*@stable",
+        "joomla/view": "1.*@stable",
+        "joomla/controller": "1.*@stable",
+        "joomla/router": "1.*@stable",
+        "joomla/di": "1.*@stable"
     },
     "autoload": {
         "psr-0": {
