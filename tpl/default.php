@@ -42,7 +42,7 @@
 
 <div class="footer container">
 	<a href="https://github.com/elkuku/EpicDocumentor">EpicDocumentor</a> was made in 2013 by <a
-		href="https:/>/github.com/elkuku">elkuku</a>
+		href="https:/github.com/elkuku">elkuku</a>
 	<code>=;)</code>
 </div>
 
