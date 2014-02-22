@@ -52,7 +52,7 @@ final class Application extends AbstractWebApplication
 		parent::__construct();
 
 		// Build the DI Container
-		$this->container = with(new Container)
+		$this->container = (new Container)
 			->registerServiceProvider(new ApplicationProvider($this))
 			->registerServiceProvider(new ConfigurationProvider($this->config))
 			->registerServiceProvider(new DatabaseProvider)

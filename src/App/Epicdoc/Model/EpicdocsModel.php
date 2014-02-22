@@ -19,9 +19,11 @@ use Joomla\Filesystem\Folder;
  */
 class EpicdocsModel extends AbstractEpicdocDatabaseModel
 {
+	protected $docuBase ='';
+
 	public function getItems($project)
 	{
-		$path = JPATH_ROOT . '/docu_base/' . $project;
+		$path = $this->docuBase . '/' . $project;
 
 		if (false == is_dir($path))
 		{
@@ -29,5 +31,21 @@ class EpicdocsModel extends AbstractEpicdocDatabaseModel
 		}
 
 		return Folder::files($path);
+	}
+
+	/**
+	 * @return string
+	 */
+	public function getDocuBase()
+	{
+		return $this->docuBase;
+	}
+
+	/**
+	 * @param string $docuBase
+	 */
+	public function setDocuBase($docuBase)
+	{
+		$this->docuBase = $docuBase;
 	}
 }

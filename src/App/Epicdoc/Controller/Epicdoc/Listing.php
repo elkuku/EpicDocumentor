@@ -8,6 +8,8 @@
 
 namespace App\Epicdoc\Controller\Epicdoc;
 
+use App\Epicdoc\Model\EpicdocModel;
+use App\Epicdoc\View\Epicdocs\EpicdocsHtmlView;
 use Epicdoc\Controller\AbstractEpicdocController;
 
 /**
@@ -18,12 +20,12 @@ use Epicdoc\Controller\AbstractEpicdocController;
 class Listing extends AbstractEpicdocController
 {
 	/**
-	 * @var DefaultHtmlView
+	 * @var EpicdocsHtmlView
 	 */
 	protected $view;
 
 	/**
-	 * @var DefaultModel
+	 * @var EpicdocModel
 	 */
 	protected $model;
 
@@ -36,21 +38,6 @@ class Listing extends AbstractEpicdocController
 	protected $defaultView = 'epicdocs';
 
 	/**
-	 * Initialize the controller.
-	 *
-	 * @return  $this
-	 *
-	 * @since   1.0
-	 */
-	public function XXXinitialize()
-	{
-		parent::initialize();
-
-		$this->model->setProject($this->container->get('app')->getProject());
-		$this->view->setProject($this->container->get('app')->getProject());
-	}
-
-	/**
 	 * Execute the controller.
 	 *
 	 * @return  string  The rendered view.
@@ -61,6 +48,8 @@ class Listing extends AbstractEpicdocController
 	{
 		/* @type \Epicdoc\Application $application */
 		$application = $this->container->get('app');
+
+		$this->model->setDocuBase($this->container->get('config')->get('docu_base'));
 
 		$project = $application->input->getCmd('project_alias');
 

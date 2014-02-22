@@ -52,7 +52,7 @@ class Save extends AbstractEpicdocController
 			throw new \UnexpectedValueException('No text given');
 		}
 
-		with(new PageModel($this->container->get('db')))
+		(new PageModel($this->container->get('db')))
 			->save($project, $page, $oldPage, $text);
 
 		$application->redirect($application->get('uri.base.path') . 'epicdoc/' . $project);

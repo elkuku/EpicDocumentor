@@ -24,4 +24,18 @@ class DefaultController extends AbstractEpicdocController
 	 * @since  1.0
 	 */
 	protected $defaultView = 'epicdoc';
+
+	/**
+	 * Execute the controller.
+	 *
+	 * @return  string  The rendered view.
+	 *
+	 * @since   1.0
+	 */
+	public function execute()
+	{
+		$this->model->setDocuBase($this->container->get('config')->get('docu_base'));
+
+		return parent::execute();
+	}
 }

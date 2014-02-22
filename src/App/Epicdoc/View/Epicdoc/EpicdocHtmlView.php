@@ -8,10 +8,20 @@
 
 namespace App\Epicdoc\View\Epicdoc;
 
+use App\Epicdoc\Model\EpicdocModel;
+
 use Epicdoc\View\EpicdocDefaultView;
 
 class EpicdocHtmlView extends EpicdocDefaultView
 {
+	/**
+	 * The model object.
+	 *
+	 * @var    EpicdocModel
+	 * @since  1.0
+	 */
+	protected $model;
+
 	/**
 	 * Method to render the view.
 	 *

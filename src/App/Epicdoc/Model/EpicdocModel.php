@@ -17,8 +17,31 @@ use Epicdoc\Model\AbstractEpicdocDatabaseModel;
  */
 class EpicdocModel extends AbstractEpicdocDatabaseModel
 {
+	protected $docuBase ='';
+
 	public function getItems()
 	{
-		return with(new ProjectModel($this->db))->getProjects();
+		return (new ProjectModel($this->db, $this->getDocuBase()))->getProjects();
+	}
+
+	/**
+	 * @return string
+	 */
+	public function getDocuBase()
+	{
+		if (!$this->docuBase)
+		{
+			throw new \UnexpectedValueException('Docu base not set.');
+		}
+
+		return $this->docuBase;
+	}
+
+	/**
+	 * @param string $docuBase
+	 */
+	public function setDocuBase($docuBase)
+	{
+		$this->docuBase = $docuBase;
 	}
 }

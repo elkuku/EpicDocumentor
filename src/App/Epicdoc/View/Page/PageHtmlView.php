@@ -13,7 +13,13 @@ use Epicdoc\View\EpicdocDefaultView;
 class PageHtmlView extends EpicdocDefaultView
 {
 	protected $project;
+
 	protected $page;
+
+	/**
+	 * @var  \App\Epicdoc\Model\PageModel
+	 */
+	protected $model;
 
 	/**
 	 * Method to render the view.

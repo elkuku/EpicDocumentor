@@ -32,7 +32,7 @@ class PageModel extends AbstractEpicdocDatabaseModel
 
 	public function save($project, $page, $oldPage, $text)
 	{
-		$basePath = with(new ProjectModel($this->db))->getBasePath();
+		$basePath = (new ProjectModel($this->db))->getBasePath();
 
 		$path = $basePath . '/' . $project . '/' . $page;
 

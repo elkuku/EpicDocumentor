@@ -13,6 +13,7 @@ use Epicdoc\View\EpicdocDefaultView;
 class ProjectHtmlView extends EpicdocDefaultView
 {
 	protected $project;
+
 	protected $page;
 
 	/**

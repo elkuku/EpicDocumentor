@@ -34,7 +34,7 @@ class Save extends AbstractEpicdocController
 		$name    = $application->input->getCmd('name');
 		$oldName = $application->input->getCmd('old_name');
 
-		with(new ProjectModel($this->container->get('db')))
+		(new ProjectModel($this->container->get('db')))
 			->save($name, $oldName);
 
 		$application->redirect($application->get('uri.base.path'));

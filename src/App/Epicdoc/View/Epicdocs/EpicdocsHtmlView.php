@@ -15,6 +15,11 @@ class EpicdocsHtmlView extends EpicdocDefaultView
 	protected $project;
 
 	/**
+	 * @var  \App\Epicdoc\Model\EpicdocsModel
+	 */
+	protected $model;
+
+	/**
 	 * Method to render the view.
 	 *
 	 * @return  string  The rendered view.

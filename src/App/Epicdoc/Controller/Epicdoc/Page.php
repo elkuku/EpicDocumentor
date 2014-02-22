@@ -36,21 +36,6 @@ class Page extends AbstractEpicdocController
 	protected $defaultView = 'page';
 
 	/**
-	 * Initialize the controller.
-	 *
-	 * @return  $this
-	 *
-	 * @since   1.0
-	 */
-	public function XXXinitialize()
-	{
-		parent::initialize();
-
-		$this->model->setProject($this->container->get('app')->getProject());
-		$this->view->setProject($this->container->get('app')->getProject());
-	}
-
-	/**
 	 * Execute the controller.
 	 *
 	 * @return  string  The rendered view.
